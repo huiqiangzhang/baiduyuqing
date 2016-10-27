@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/yuqing.css">
+    <link href="http://cdn.bootcss.com/fullPage.js/2.8.2/jquery.fullPage.css" rel="stylesheet">
+
+    <title>百度舆情</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/yuqing.js"></script>
+
+</head>
+<body>
+<div class="header">
+    <div class="nav">
+        <a href="" class="logo"></a>
+        <div class="one">
+            <ul>
+                <li><a href="">用户版</a></li>
+                <li><a href="">产品介绍</a></li>
+                <li><a href="">首页</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+            <li class="kehu"><a href="" class="kehuduan">手机客户端<div class="hot"></div></a>
+                <div class="shaoma">
+                    <h2>扫码下载</h2>
+                    <div class="anzhuo"></div>
+                    <div class="ios"></div>
+                    <span>安卓</span>
+                    <span class="ios1">ios</span>
+                </div>
+            </li>
+            <li><a href="" class="sinan">百度司南</a></li>
+            <li><a href="" class="sinan">联系我们</a></li>
+            <li><a href="" class="huangse">申请试用</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="fullpage">
+    <div class="section first">
+        <div class="item"></div>
+        <div class="feiji"></div>
+        <div class="denglu">
+            <div class="yonghu">
+                <div class="touxiang"></div>
+                <input type="text" placeholder="用户名" class="name">
+            </div>
+            <p><span>!</span>您输入的用户名不正确</p>
+            <div class="mima">
+                <div class="key"></div>
+                <input type="password" placeholder="密码" class="pass">
+            </div>
+            <p><span>!</span>您输入的密码不正确</p>
+            <div class="yangzheng">
+
+                <input type="text"  class="yanginput"placeholder="验证码">
+                <div class="yangpic"></div>
+                <a href="">换一张</a>
+            </div>
+            <p><span>!</span>验证码不正确</p>
+            <div class="submit">
+                <input type="submit" id="submit-form"  class="submit1" value="登录">
+            </div>
+            <div class="anquan">
+                <a href="" class="anquanleft">安全控件常见问题</a>
+                <a href="" class="anquanright">忘记密码</a>
+
+            </div>
+        </div>
+
+        <div class="dibu">
+            <div class="scroll"></div>
+            <div class="shitou"></div>
+            <div class="ship"></div>
+            <div class="shitou1"></div>
+            <div class="shitou2"></div>
+        </div>
+    </div>
+
+
+
+    <div class="section second">
+
+        <div class="second-left">
+            <h3></h3>
+            <h4 class="lingxian">数据收集与处理</h4>
+            <p class="lingxian1">15年专业数据收集与语义分析技术积累<br>卓越极致，不断攀登</p>
+
+        </div>
+        <div class="second-right"></div>
+        <div class="dibu">
+            <div class="scroll"></div>
+            <div class="fangkuai1"></div>
+            <div class="fangkuai2"></div>
+            <div class="fangkuai3"></div>
+            <div class="fangkuai4"></div>
+            <div class="fangkuai5"></div>
+
+        </div>
+
+    </div>
+
+    <div class="section third">
+        <div class="fangkuai1"></div>
+        <div class="fangkuai2"></div>
+        <div class="fangkuai3"></div>
+        <div class="fangkuai4"></div>
+        <div class="fangkuai5"></div>
+            <div class="third-left">
+                <h3></h3>
+                <h4 class="lingxian">舆情分析逻辑与架构</h4>
+                <p class="lingxian1">量诊断、传播分析、情感提炼、受众画像<br>有方法论，更有智慧</p>
+            </div>
+            <div class="third-right"></div>
+            <div class="dibu">
+                <div class="scroll"></div>
+            </div>
+    </div>
+
+
+    <div class="section fourth">
+        <div class="fang1"></div>
+
+        <div class="fourth-left">
+            <h3></h3>
+            <h4 class="zhuanye">舆情分析逻辑与架构</h4>
+            <p class="zhuanye1">非凡的数据洞悉和可视化能力<br>精研数据，惊艳所见</p>
+        </div>
+        <div class="fourth-right"></div>
+        <div class="zuihuo">
+            <div class="shengming">© 2014 Baidu使用百度前必读</div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
+<script src="http://cdn.bootcss.com/fullPage.js/2.8.2/jquery.fullPage.js"></script>
+<script>
+    $(function () {
+        $('#fullpage').fullpage({
+            navigation:true,
+            navigationPosition:'right'
+        });
+        $('.scroll').on('click',function(){
+            $.fn.fullpage.moveSectionDown();
+        })
+    })
+</script>
